@@ -1,0 +1,256 @@
+#grid {
+    display: grid;
+    grid-template-columns: 48px 33% 65%;
+    grid-template-rows: 2% 100.1% 2%;
+    width: 21cm;
+    height: 29.7cm;
+}
+
+#title {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: #3c3c3c;
+    color: #7f8585;
+}
+
+
+#title img{
+    width: 20px;
+    height: 20px;
+    padding: 1px 0;
+}
+
+#title img:first-child{
+    padding-left: 5px;
+}
+#icons {
+    display: flex;
+    flex-direction: column;
+    grid-column-start: 1;
+    background-color: #333333;
+    color: #7f8585;
+}
+
+#icons img {
+    margin: 6px auto;
+    width: 32px;
+    height: 32px;
+    color: #7f8585;
+    padding: 10px 0;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#icons .active {
+    margin: 12px auto;
+    border-left: solid white 2px;
+    width: 32px;
+    height: 32px;
+    color: #7f8585;
+}
+
+#skills {
+    grid-column-start: 2;
+    background-color: #252526;
+    color: #cccccc;
+    font-weight: 700;
+    padding: 0 10px;
+}
+
+#details {
+    grid-column-start: 3;
+    background-color: #1e1e1e;
+    color: #cfcfcf;
+}
+
+#tabs {
+    display: grid;
+    grid-template-columns: 205px 80%;
+    height: 32px;
+    background-color: #252526;
+    vertical-align: middle;
+}
+
+#tab-active {
+    display: flex;
+    align-items: center;
+    grid-column-start: 1;
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+#tab-text:before {
+    content: url(images/account_circle-white-18dp.svg);
+    vertical-align: middle;
+    padding: 0 0;
+    margin: 0px 5px 0px 5px;
+}
+
+#tab-text:after {
+    content: url(images/close-white-18dp.svg);
+    vertical-align: middle;
+    padding: 0 0;
+    margin: 0px 0px 0px 10px;
+}
+
+.section:before {
+    content: url(images/expand_more-white-18dp.svg);
+    vertical-align: middle;
+    padding: 0 0;
+    margin: 0 0;
+}
+
+#tab-inactive {
+    grid-column-start: 2;
+    background-color: #2d2d2d;
+}
+
+#content {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+#terminal {
+    border-top: #252526 solid 3px;
+    padding: 6px 0px 6px 16px;
+}
+
+#terminal img {
+    vertical-align: middle;
+    padding: 0px 5px 2px 5px;
+
+}
+
+#terminal input {
+    margin-left: 210px;
+        display: inline-block;
+        color: #cfcfcf;
+        padding: 2px 0px 2px 7px;
+        width: 100px;
+        box-sizing: border-box;
+        border: none;
+        background: #3c3c3c url("./images/expand_more-white-18dp.svg") no-repeat right; 
+
+}
+
+#terminal-nav{
+    border-bottom: #cfcfcf solid 2px;
+    font-size: 12px;
+    padding: 4px 0px;
+    vertical-align: middle;
+}
+
+#terminal-console {
+    font-family: Consolas, 'Courier New', monospace;
+    font-size: 12px;
+}
+
+#footer {
+    background-color: #007acc;
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+h1 {
+    font-weight: 200;
+    font-size: 2.5rem;
+    margin: 20px 0px 0px 0px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+    text-rendering: optimizeLegibility;
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+strong {
+    color: #3794ff;
+    font-weight: 600;
+}
+
+input[type='text'] {
+    display: inline-block;
+    color: #cfcfcf;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #3c3c3c;
+    border: none;
+}
+
+
+
+.section {
+    vertical-align: middle;
+    margin: 10px 0;
+}
+
+.section:before {
+    content: url(images/expand_more-white-18dp.svg);
+    vertical-align: middle;
+    padding: 0 0;
+    margin: 0 0;
+}
+
+.section-title {
+    margin: 7px 0;
+    font-weight: 400;
+}
+
+.phone {
+    text-decoration: none;
+    color: #3794ff;
+    font-weight: 400;
+    margin-left: 18px;
+}
+
+a {
+    text-decoration: none;
+    color: #3794ff;
+    font-weight: 400;
+    margin-left: 18px;
+}
+
+a:visited {
+    color: #3794ff;
+}
+
+.avatar {
+    display: flex;
+    justify-content: center;
+}
+
+.avatar img {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px #fff, 0 0 0 4px #999, 0 2px 5px 4px rgba(0, 0, 0, 0.2);
+}
+
+.hard {
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+}
+
+.hard img {
+    margin-left: 18px;
+    width: 48px;
+    height: 48px;
+}
+
+.hard p {
+    margin-left: 18px;
+    font-weight: 700;
+}
+
+i {
+    width: 16px;
+    height: 16px;
+}
